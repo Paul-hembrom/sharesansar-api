@@ -9,9 +9,8 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="sharesansar-api",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="A yfinance-like API for Nepali stock data from ShareSansar",
+    author="Paul Hembrom",
+    description="An API for Nepali stock data from ShareSansar",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/sharesansar-api",
