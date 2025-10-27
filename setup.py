@@ -1,19 +1,19 @@
 from setuptools import setup, find_packages
+import os
 
+# Read the contents of README file
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r", encoding="utf-8") as fh:
-    requirements = fh.read().splitlines()
-
 setup(
     name="sharesansar-api",
-    version="0.1.0",
+    version="0.3.0",  # Bump version
     author="Paul Hembrom",
-    description="An API for Nepali stock data from ShareSansar",
+    author_email="your.email@example.com",  # Update with your real email
+    description="An API for Nepali stock data from ShareSansar for NEPSE Market",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/sharesansar-api",
+    url="https://github.com/Paul-hembrom/sharesansar-api",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
@@ -31,10 +31,15 @@ setup(
         "Topic :: Office/Business :: Financial :: Investment",
     ],
     python_requires=">=3.7",
-    install_requires=requirements,
-    keywords="nepal, stocks, sharesansar, finance, trading, nepal-stock-exchange",
+    install_requires=[
+        "requests>=2.25.0",
+        "pandas>=1.3.0",
+        "beautifulsoup4>=4.9.0",
+        "lxml>=4.6.0"
+    ],
+    keywords="nepal, stocks, sharesansar, finance, trading, nepal-stock-exchange, nepse",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/sharesansar-api/issues",
-        "Source": "https://github.com/yourusername/sharesansar-api",
+        "Bug Reports": "https://github.com/Paul-hembrom/sharesansar-api/issues",
+        "Source": "https://github.com/Paul-hembrom/sharesansar-api",
     },
 )

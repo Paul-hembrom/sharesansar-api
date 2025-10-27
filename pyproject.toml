@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sharesansar-api"
-version = "0.1.0"
+version = "0.3.0"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Paul Hembrom", email = "hembrompaulus192@gmail.com"},
 ]
-description = "A yfinance-like API for Nepali stock data from ShareSansar"
-readme = "README.md"
+description = "AnAPI for Nepali stock data from ShareSansar for NEPSE Market"
+readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.7"
 keywords = ["nepal", "stocks", "sharesansar", "finance", "trading"]
 classifiers = [
@@ -25,15 +25,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/sharesansar-api"
-"Bug Reports" = "https://github.com/yourusername/sharesansar-api/issues"
-
-[project.optional-dependencies]
-dev = [
-    "pytest>=6.0",
-    "pytest-cov",
-    "black",
-    "flake8",
-    "mypy",
-    "twine",
-]
+"Homepage" = "https://github.com/Paul-hembrom/sharesansar-api"
+"Bug Reports" = "https://github.com/Paul-hembrom/sharesansar-api/issues"
